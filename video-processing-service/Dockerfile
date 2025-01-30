@@ -4,7 +4,7 @@ FROM node:18
 # Set teh working director in the container to /app
 WORKDIR /app
 
-COPY package* .json ./
+COPY package*.json ./
 
 RUN apt-get update && apt-get install -y ffmpeg
 
